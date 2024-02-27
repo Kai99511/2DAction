@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     private GameObject jumpSE;
     [SerializeField, Header("É_ÉÅÅ[ÉWSE")]
     private GameObject damageSE;
+    
 
     private Vector2 inputDirection;
     private Rigidbody2D rigid;
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
     private bool bjump;
     private SpriteRenderer spriteRenderer;
     
+
 
 
     // Start is called before the first frame update
@@ -177,4 +180,6 @@ public class Player : MonoBehaviour
     {
         return HP;
     }
+
+   
 }

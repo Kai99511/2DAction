@@ -55,7 +55,7 @@ public class MainManager : MonoBehaviour
 
     private void ShowGameOverUI()
     {
-        if ( player !=null || gameOverUI.activeSelf)return;
+        if ( player != null || gameOverUI.activeSelf) return;
 
         gameOverUI.SetActive(true);
         bShowUI = true;
@@ -77,6 +77,7 @@ public class MainManager : MonoBehaviour
     {
         if (!bShowUI || !context.performed) return;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
         Instantiate(submitSE);
     }
    

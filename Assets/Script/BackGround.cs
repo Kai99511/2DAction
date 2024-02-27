@@ -7,7 +7,7 @@ public class BackGround : MonoBehaviour
     [SerializeField, Header("éãç∑å¯â "), Range(0, 1)]
     private float parallaxEffect;
 
-    private GameObject camera;
+    private GameObject _camera;
     private float length;
     private float startPosX;
 
@@ -17,7 +17,7 @@ public class BackGround : MonoBehaviour
     {
         startPosX = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
-        camera = Camera.main.gameObject;
+        _camera = Camera.main.gameObject;
     }
 
     // Update is called once per frame
@@ -33,8 +33,8 @@ public class BackGround : MonoBehaviour
 
     private void Parallax()
     {
-        float temp = camera.transform.position.x * (1 - parallaxEffect);
-        float dist = camera.transform.position.x * parallaxEffect;
+        float temp = _camera.transform.position.x * (1 - parallaxEffect);
+        float dist = _camera.transform.position.x * parallaxEffect;
 
         transform.position = new Vector3(startPosX + dist, transform.position.y, transform.position.x);
 

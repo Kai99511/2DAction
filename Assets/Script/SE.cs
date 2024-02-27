@@ -15,10 +15,10 @@ public class SE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playingEnd();
+        PlayingEnd();
     }
 
-    private void playingEnd()
+    private void PlayingEnd()
     {
         if (audioSource.isPlaying) return;
         Destroy(gameObject);

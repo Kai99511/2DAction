@@ -2506,7 +2506,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: a456e579-6fd5-4ac9-9eb5-6b830a2c13c7
-    m_ActionName: UI/Restart[/Keyboard/space,/DualSenseGamepadHID/buttonSouth]
+    m_ActionName: UI/Restart[/Keyboard/space,/DualSenseGamepadHID/buttonSouth,/Keyboard/r]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1483050480}
